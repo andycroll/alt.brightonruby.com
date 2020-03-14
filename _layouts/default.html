@@ -7,23 +7,24 @@
 
 		{% seo %}
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-		<meta name="application-name" content="{{ site.title }}">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ site.color }}">
-		<meta name="msapplication-TileColor" content="{{ site.color }}">
-		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+		<meta name="application-name" content="{{ site.title }}" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ site.color }}" />
+		<meta name="msapplication-TileColor" content="{{ site.color }}" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<link rel="stylesheet" href="/css/site.min.css" />
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-brand pt-0" href="/">
-					<!-- <img src="/images/logo.svg" alt="logo" width="180px" /> -->
+	<body class="bg-dark text-white text-monospace" style="padding-top: 90px;">
+		<nav class="navbar navbar-expand-lg bg-dark fixed-top border-bottom">
+			<div class="container-fluid ">
+				<a class="navbar-brand position-relative pt-2 text-white" href="/">
+					<img src="/images/logo.svg" alt="logo" width="50px" style="position: absolute; top: -3px; left: -18px" />
+					&nbsp;&nbsp;&nbsp;&nbsp;Alt::BrightonRuby
 				</a>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +32,12 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarContent">
-					<nav class="navbar-nav mr-auto mt-2 mt-md-0 mb-md-0">
-						<div class="nav-item{% if page.url contains 'name' %} active{% endif %}">
-							<a class="nav-link" href="/">Item</a>
-						</div>
-					</nav>
+					<nav class="navbar-nav mr-auto mt-2 mt-md-0 mb-md-0"></nav>
 
 					<nav class="navbar-nav mt-2 mt-md-0">
 						<div class="nav-item text-right">
 							<hr class="d-md-none mt-1" />
-							<a class="btn btn-primary" href="/">Action</a>
+							<a class="btn btn-primary" href="/">Sign Up</a>
 						</div>
 					</nav>
 				</div>
