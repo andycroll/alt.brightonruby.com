@@ -1,9 +1,9 @@
-title: Site
-email: andy@goodscary.com
-description: ""
-url: "https://github.com/andycroll/gulpjekyll"
+title: "Alt::BrightonRuby"
+email: "andy@goodscary.com"
+description: "A slightly odd, quasi-conference for strange times by Andy Croll"
+url: "https://alt.brightonruby.com"
 twitter_username: andycroll
-color: "#FFFFFF"
+color: "#343a40"
 
 plugins:
  - jekyll-seo-tag
