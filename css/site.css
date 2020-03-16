@@ -215,7 +215,7 @@ small,
   margin-right: -15px;
   margin-left: -15px; }
 
- .col-4, .col-6, .col-12, .col, .col-sm-4, .col-sm-6, .col-sm-8, .col-md-6, .col-lg-4, .col-lg-8, .col-xl-3 {
+ .col-4, .col-6, .col-12, .col, .col-sm-4, .col-sm-6, .col-sm-11, .col-md-3, .col-md-6, .col-md-8, .col-lg-4, .col-lg-6, .col-lg-8, .col-xl-3 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -245,22 +245,35 @@ small,
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
-  .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; } }
+  .col-sm-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%; }
+  .offset-sm-1 {
+    margin-left: 8.33333%; } }
 
 @media (min-width: 600px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%; }
   .col-md-6 {
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+  .col-md-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%; } }
 
 @media (min-width: 992px) {
   .col-lg-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%; }
   .col-lg-8 {
     flex: 0 0 66.66667%;
-    max-width: 66.66667%; } }
+    max-width: 66.66667%; }
+  .offset-lg-0 {
+    margin-left: 0; } }
 
 @media (min-width: 1400px) {
   .col-xl-3 {
@@ -361,6 +374,25 @@ small,
     .btn-success:not(:disabled):not(.disabled):active:focus {
       box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5); }
 
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa; }
+  .btn-outline-light:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
+  .btn-outline-light:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
+   .btn-outline-light:disabled {
+    color: #f8f9fa;
+    background-color: transparent; }
+  .btn-outline-light:not(:disabled):not(.disabled):active {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
+    .btn-outline-light:not(:disabled):not(.disabled):active:focus {
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
+
 .btn-lg {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -442,8 +474,19 @@ a.bg-dark:hover, a.bg-dark:focus {
 .bg-white {
   background-color: #fff !important; }
 
+.d-none {
+  display: none !important; }
+
 .d-flex {
   display: flex !important; }
+
+@media (min-width: 600px) {
+  .d-md-block {
+    display: block !important; } }
+
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block !important; } }
 
 .align-items-center {
   align-items: center !important; }
